@@ -11,7 +11,7 @@ _startint = 0
 
 _global_limit = 999999
 
-_check_for_loli = True;
+_check_for_loli = True
 
 def main_menu():
     global _check_for_loli
@@ -38,7 +38,7 @@ def download_specific_doujin():
     print("Doujin ID:")
     doujin_id_temp = input()
     
-    print("[!] Attempting to get Doujin (" + str(doujin_id_temp) +")")
+    print("[!] Attempting to get Doujin (" + doujin_id_temp +")")
     
     doujin_try = nhentai.get_doujin(doujin_id_temp)
         
@@ -130,7 +130,7 @@ def download_doujin(_id):
         
     print("[!] Doujin Download Done (" + _doujin_temp.titles["english"] + ")")
     
-print("[!] Warning: Root is required.")
+print("Python Doujin Downloader - Written by BasicllyMaximqs\n[!] Warning: Root is required.")
 main_menu()
     
     
