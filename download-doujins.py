@@ -28,9 +28,9 @@ def main_menu():
         _quick_input = input()
         
         if _quick_input == "y":
-            _check_for_loli = False;
+            _check_for_loli = False
         else:
-            _check_for_loli = True;
+            _check_for_loli = True
             
         loop_downloader()
 
@@ -68,7 +68,7 @@ def loop_downloader():
         time.sleep(2)
         start_download()
 
-    print("[!] Hey, ur done here completely!")
+    print("[!] Finished Download")
 
 
 def start_download():
@@ -87,7 +87,7 @@ def start_download():
     
     _length_loli_check = len(_doujin.tags)
     
-    is_loli = False;
+    is_loli = False
     if _check_for_loli:
         for tag_content in range(1, _length_loli_check):
             if tag_content == _length_loli_check:
@@ -95,7 +95,7 @@ def start_download():
             
             if _doujin.tags[tag_content].type == "tag":
                 if _doujin.tags[tag_content].name == "lolicon":
-                    is_loli = True;
+                    is_loli = True
                     break;
                 else:
                     print("[!] Ignored non-Loli tag (" + _doujin.tags[tag_content].name + ")")
