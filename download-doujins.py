@@ -35,8 +35,7 @@ def main_menu():
         loop_downloader()
 
 def download_specific_doujin():
-    print("Doujin ID:")
-    doujin_id_temp = input()
+    doujin_id_temp = input("Doujin ID:" )
     
     print(f"[!] Attempting to get Doujin ({doujin_id_temp})")
     
